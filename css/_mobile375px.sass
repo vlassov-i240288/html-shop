@@ -1,0 +1,238 @@
+@media ( max-width: 375px)
+    html 
+        overflow-x:  hidden
+
+    .footer
+        flex-direction: column-reverse
+
+        &__right 
+            justify-content: center
+    
+    .form
+        &_button 
+            width: 95px
+        &__email
+            width: 206px
+    
+    .review
+        background-position-x: -452px
+        background-position-y: 0px
+        background-size: 545%
+        &__layer
+            padding-bottom: 109px
+
+    .carts
+        &__button
+            margin-top: 40px
+            margin-bottom: 96px
+
+    .promo
+        justify-content: center
+
+        &__img
+            display: none
+
+        &__text
+            padding-top: 148px
+            padding-bottom: 148px
+
+        &__h1
+            font-size: 38px
+            line-height: 46px
+
+        &__h2
+            font-size: 20px
+            line-height: 24px
+
+    .categories
+        padding-top: 64px
+        padding-bottom: 64px
+
+        &__top
+            display: flex
+            flex-direction: column
+
+        &__item
+            height: 247px
+
+        &__accesories
+            height: 111px
+
+    .center 
+        padding-left: calc(50% - 170px)
+        padding-right: calc(50% - 170px)
+
+    .nav
+        width: 100%
+        top: 0px
+        z-index: 20
+
+    #switcher
+
+        &:checked ~ .nav
+            right: -110%
+
+    .header
+        
+        &__right
+            
+            &_link
+                display: none
+            
+                &-nav
+                    display: block
+
+    //catalog
+
+    .sort
+        gap: 23px
+        &__summary
+            font-size: 12px
+            line-height: 14px
+            
+            &_ul
+                left: -15px
+
+                &-left
+                    left: 5px
+            
+    
+
+    .filter
+        width: 0
+
+        &__details
+            width: 37px
+            // padding: 13px 0px 0px
+            top: -20px
+            left: -11px
+            
+            &[open]
+                width: 360px
+
+
+        &__summary
+            display: none
+
+
+        &__svg
+            width: 37px
+            height: 25px
+
+    .promo
+
+        &__catalog
+            flex-direction: column
+            justify-content: center
+
+            &_heading
+                padding-bottom: 32px
+
+    // registration
+
+    .registration
+        flex-wrap: wrap
+        margin-top: 40px
+        gap: 40px
+
+        &__loyalty
+            width: 100%
+
+    // product
+
+    .product
+
+        &__promo
+            height: 624px
+        
+        &__catalog
+
+            &_top
+                margin-left: -18px
+                margin-right: -18px
+
+            &_text
+                padding: 0
+
+            &_border
+                width: 85%
+
+            &_button
+                margin-top: 64px
+
+            &_description
+                margin-bottom: 64px
+
+    // cart
+
+    .shopping-cart
+        padding-bottom: 96px
+
+        &__img
+            width: 85%
+
+        &__cart_wrapper
+            padding: 13px 17px
+
+            & svg
+                padding-top: 6px
+                padding-left: 0
+                height: 10px
+
+        &__cart
+            height: 188px
+            
+            &_link
+                margin-bottom: 25px
+            
+            &_text
+                
+                &-h2
+                    font-size: 16px
+                    line-height: 19px
+
+                &-li
+                    font-size: 14px
+                    line-height: 17px
+                    padding-bottom: 4px
+
+                    & input
+                        width: 24px
+                        height: 15px
+                        margin-left: 15px
+                        padding: 0 8px
+                        box-sizing: border-box
+                        font-size: 10px
+                        line-height: 12px
+
+            
+        &__button
+            gap: 9px
+            margin-top: 12px
+            padding-bottom: 36px
+
+            &_btn
+                font-size: 12px
+                line-height: 14px
+                padding: 9px 13px
+
+        &_adress
+            flex-wrap: wrap
+
+        &__adress
+
+            &_form 
+
+                & input
+                    margin-top: 0
+                    margin: 20px -10px 0
+                &-btn
+                    margin-bottom: 48px
+                    margin-left: -10px
+
+        &__total
+            height: 37%
+            margin: 0 -10px
+            padding: 44px 42px
+
+    

@@ -1,0 +1,204 @@
+
+    
+.shopping-cart
+    display: flex
+    flex-wrap: wrap
+    padding-top: 96px
+    padding-bottom: 128px
+    justify-content: space-between
+    
+
+    &__box
+        display: flex
+        flex-direction: column
+        gap: 40px
+
+    &__cart
+        display: flex
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+        transition: transform .3s
+        &:hover
+            transform: scale(1.02)
+        &_wrapper
+            display: flex
+            padding: 22px 22px 31px 31px
+            width: 100%
+            justify-content: space-between
+
+            & svg
+                padding-top: 6px
+                padding-left: 57px
+                cursor: pointer
+
+            & path
+                fill: #575757
+                transition: fill 0.2s
+                &:hover
+                    fill: $globalColor
+            
+        &_link
+            display: block
+            margin-bottom: 42px
+
+                    
+
+        &_text-h2
+            font-style: normal
+            font-weight: normal
+            font-size: 24px
+            line-height: 29px
+            color: $fonColorDark
+            
+
+        &_text-li
+            padding-bottom: 6px
+            font-style: normal
+            font-weight: normal
+            font-size: 22px
+            line-height: 26px
+            color: #575757
+            & span
+                color: $globalColor
+            & input
+                width: 44px
+                height: 25px
+                border: 1px solid #EAEAEA
+                margin-left: 25px
+                padding: 0 15px
+                box-sizing: border-box 
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 22px
+                color: $fonColorDark
+
+    &__img
+        width: 75%
+        display: flex
+
+        & img
+            width: 100%
+
+    &__button
+        display: flex
+        justify-content: space-between
+        gap: 192px
+        margin-top: 32px
+
+        &_btn
+            background: #FFFFFF
+            border: 1px solid #A4A4A4
+            outline: none
+            cursor: pointer
+            padding: 17px 39px
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            transition: background 1s
+
+        &_btn:hover
+            background: $fonColorDark
+            color: #FFFFFF
+    
+    &__adress
+
+        &_form
+            display: flex
+            flex-direction: column
+            margin-top: 20px
+
+            &-h3
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #222222
+
+            & input
+                margin-top: 20px
+                border: 1px solid #A4A4A4
+                font-style: normal
+                font-weight: 300
+                font-size: 13px
+                line-height: 16px
+                color: #b1b1b1
+                width: 360px
+                height: 45px
+                padding: 13px 17px
+                box-sizing: border-box
+            
+            &-btn
+                width: 101px
+                background: #FFFFFF
+                border: 1px solid #A4A4A4
+                outline: none
+                cursor: pointer
+                padding: 9px 12px
+                margin-top: 24px
+                font-style: normal
+                font-weight: 300
+                font-size: 11px
+                line-height: 13px
+                color: #4A4A4A
+                transition: background 1s
+
+                &:hover
+                    background: $fonColorDark
+                    color: #FFFFFF
+
+    &__total
+        background: #F5F3F3
+        margin-top: 57px
+        padding: 39px 44px 32px
+        box-sizing: border-box
+        text-align: right
+
+        &_text
+            font-style: normal
+            font-weight: normal
+            font-size: 11px
+            line-height: 13px
+            color: #4A4A4A
+
+            & span
+                @extend .shopping-cart__total_text
+                padding-left: 20px 
+
+        &_h3
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: #222222
+
+            & span
+                @extend .shopping-cart__total_h3
+                padding-left: 20px 
+                color: $globalColor
+                font-weight: 700
+
+        &_line
+            background: #E2E2E2
+            height: 1px
+            width: 100%
+            margin: 21px 0 17px
+        
+        &_btn
+            background: $globalColor
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: #ffffff
+            padding: 15px 41px
+            outline: none
+            border: none
+            cursor: pointer
+            transition: color 0.5s, background 0.5s
+
+            &:hover
+                color: #ffffff
+                background: $fonColorDark
+
+

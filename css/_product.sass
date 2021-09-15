@@ -1,0 +1,116 @@
+.product__promo
+    background-color: #F7F7F7
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &_left
+        height: 47px
+        width: 47px
+        background: rgba(42, 42, 42, 0.15)
+        @include center
+
+    &_foto
+        max-width: 100%
+
+    &_img
+        width: 100%
+
+    &_right
+        @extend .product__promo_left
+
+.product__catalog
+    
+
+    &_bot
+        display: flex
+        gap: 30px
+        margin-bottom: 98px
+
+    &_top
+        // position: relative
+        margin-top: -70px
+        @include centerRow
+
+    &_description
+        background-color: #ffffff
+        z-index: 10
+        // position: absolute
+        top: -65px
+        @include center
+        border: 1px solid #EAEAEA
+        padding: 65px 0
+        margin-bottom: 129px
+        
+
+    &_h2
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: $globalColor
+
+    &_line-top
+        height: 3px
+        width: 63px
+        background: #EF5B70
+        border: none
+        margin: 12px 0
+
+    &_h3
+        font-style: normal
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        color: #4D4D4D
+    &_text
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #5E5E5E
+        margin: 48px 0 32px
+        padding: 0 65px
+
+    &_price
+        font-style: normal
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px   
+        color: #EF5B70
+        padding-bottom: 65px
+
+    &_border
+        @include center
+        border-bottom: 1px solid #EAEAEA
+        margin-bottom: 65px
+        width: 60%
+    
+    &_button
+        color: $globalColor
+        border: 1px solid #FF6A6A
+        margin-top: 48px
+
+        &:hover svg path
+            fill: #ffffff
+
+        & svg
+            margin-left: 23px
+
+
+        & svg path
+            fill: #FF6A6A
+
+
+        & .cart__svg_text
+            padding: 14px 56px 14px 22px
+
+            &:hover
+                color: #ffffff
+
+        &:hover
+            background-color: #FF6A6A
+
+        
+

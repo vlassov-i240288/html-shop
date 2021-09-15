@@ -1,0 +1,110 @@
+.registration
+    margin-top: 64px
+    margin-bottom: 96px
+    display: flex
+    // flex-wrap: wrap
+    justify-content: space-between
+
+    &__form
+        display: flex
+        flex-direction: column
+        max-width: 360px
+        max-width: 360px
+
+        &_heading
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: $fonColorDark
+
+        &_input
+            margin-top: 20px
+            border: 1px solid #A4A4A4
+            font-style: normal
+            font-weight: 300
+            font-size: 13px
+            line-height: 16px
+            color: #b1b1b1
+            // max-width: 360px
+            height: 45px
+            padding: 13px 17px
+            box-sizing: border-box
+
+        &_box
+            display: flex
+            align-items: center
+            margin-top: 31px
+            margin-bottom: 33px
+
+
+        &_checkbox
+            border-radius: 5px
+            
+
+        &_label
+            font-style: normal
+            font-weight: 300
+            font-size: 11px
+            line-height: 13px
+            color: $fonColorDark
+            padding-left: 10px
+            padding-right: 20px
+
+        &_text
+            font-style: normal
+            font-weight: 300
+            font-size: 13px
+            line-height: 16px
+            color: #B1B1B1
+            padding-top: 15px
+            padding-bottom: 39px
+
+        &_btn
+            background: $globalColor
+            border: none
+            color: #ffffff
+            width: 167px
+            height: 50px
+            cursor: pointer
+            outline: none
+            transition: background 1s
+
+            &:hover
+                background: $fonColorDark
+            
+            & svg
+                padding-left: 20px
+
+    &__loyalty
+        display: flex
+        flex-direction: column
+        // width: 652px
+        width: 50%
+        
+        &_heading
+            font-style: normal
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: $fonColorDark
+        
+        &_text
+            padding: 22px 0 21px
+            font-style: normal
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: $fonColorDark
+
+        &_item
+            padding-bottom: 16px
+            font-style: normal
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: $fonColorDark
+
+            &::before
+                content: url(../img/check_reg.svg)
+                padding-right: 23px
